@@ -7,7 +7,7 @@ const app = express();
 app.get("/api", (req, res) => {
   return res.json({
     status: "Success",
-    message: "Hello from express server",
+    message: "Hello from express server!",
   });
 });
 
