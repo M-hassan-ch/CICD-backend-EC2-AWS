@@ -4,10 +4,10 @@ const app = require("../index"); // Adjust the path if index.js is in a differen
 
 describe("Express App Endpoints", () => {
   it("should respond with a success message on GET /", async () => {
-    const res = await request(app).get("/");
+    const res = await request(app).get("/api");
     expect(res.statusCode).toBe(200);
     expect(res.body).toHaveProperty("status", "Success");
-    expect(res.body).toHaveProperty("message", "Hello from express server");
+    expect(res.body).toHaveProperty("message", "Hello from express server!");
   });
 
   it("should return health status on GET /health", async () => {
