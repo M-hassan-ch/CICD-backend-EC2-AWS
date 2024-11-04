@@ -10,10 +10,6 @@ on:
 jobs:
   test:
     runs-on: self-hosted
-
-    strategy:
-      matrix:
-        node-version: [18.x]
     steps:
       - uses: actions/checkout@v4
       - name: Running test scripts
