@@ -1,6 +1,5 @@
 const request = require("supertest");
-const express = require("express");
-const app = require("../index"); // Adjust the path if index.js is in a different folder
+const app = require("../app"); // Import the Express app setup only
 
 describe("Express App Endpoints", () => {
   it("should respond with a success message on GET /", async () => {
