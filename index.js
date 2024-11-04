@@ -4,7 +4,7 @@ const PORT = process.env.PORT ? +process.env.PORT : 8000;
 
 const app = express();
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   return res.json({
     status: "Success",
     message: "Hello from express server",
