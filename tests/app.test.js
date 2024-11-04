@@ -6,7 +6,7 @@ describe("Express App Endpoints", () => {
     const res = await request(app).get("/api");
     expect(res.statusCode).toBe(200);
     expect(res.body).toHaveProperty("status", "Success");
-    expect(res.body).toHaveProperty("message", "Hello from express server");
+    expect(res.body).toHaveProperty("message", "Hello from express server!");
   });
 
   it("should return health status on GET /health", async () => {
